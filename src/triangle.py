@@ -12,10 +12,10 @@ class Triangle(Figure):
         self.side_c = side_c
 
     @property
-    def get_area(self) -> int|float:
+    def area(self) -> int|float:
         semiperimeter = (self.side_a + self.side_b + self.side_c) / 2
         return sqrt(semiperimeter * (semiperimeter - self.side_a) * (semiperimeter - self.side_b) * (semiperimeter - self.side_c))
 
     @property
-    def get_perimetr(self) -> int|float:
+    def perimetr(self) -> int|float:
         return self.side_a + self.side_b + self.side_c

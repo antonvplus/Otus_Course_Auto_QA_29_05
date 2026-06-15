@@ -9,11 +9,11 @@ class Circle(Figure):
         self.radius = radius
 
     @property
-    def get_area(self) -> int|float:
+    def area(self) -> int|float:
         return pi * self.radius**2
 
     @property
-    def get_perimetr(self) -> int|float:
+    def perimetr(self) -> int|float:
         return 2 * pi * self.radius
 
 
