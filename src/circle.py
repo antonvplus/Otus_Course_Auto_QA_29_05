@@ -1,11 +1,11 @@
-from figure import Figure
+from src.figure import Figure
 from math import pi
 
 class Circle(Figure):
 
     def __init__(self, radius: int|float) -> None:
         if radius <= 0:
-            raise ValueError("Radius can't be less than 0")
+            raise ValueError("Radius can't be less than or equal to 0")
         self.radius = radius
 
     @property
