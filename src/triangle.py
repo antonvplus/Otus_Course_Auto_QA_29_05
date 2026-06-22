@@ -1,4 +1,4 @@
-from figure import Figure
+from src.figure import Figure
 from math import sqrt
 
 class Triangle(Figure):
@@ -19,3 +19,4 @@ class Triangle(Figure):
     @property
     def perimetr(self) -> int|float:
         return self.side_a + self.side_b + self.side_c
+
